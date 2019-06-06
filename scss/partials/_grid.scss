@@ -40,6 +40,15 @@ $space: 1rem;
 	
         .col-#{$name}-#{$i} {
 	       flex-basis: 100% / $grid-columns * $i;
-	}}}}
+		}
+		.col-#{$name}-#{$i} > .#{$name}-item-double {
+			flex: 1 1 calc(100% * 2 / $i - $space);
+		}
+		.col-#{$name}-#{$i} > .#{$name}-item-triple {
+			flex: 1 1 calc(100% * 3 / $i - $space); 
+			
+		}
+
+	}}}
 
 
