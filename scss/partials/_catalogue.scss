@@ -1,0 +1,73 @@
+/* ================================================== 
+            /* #LES DIFFERENTES PAGES
+             ================================================== */
+
+	/* ====
+		page CATALOGUE 
+		==== */
+/* ====
+	2ième MENU avec une NAV pour les différents MEUBLES
+	==== */ 
+
+	.rubriques-articles{
+
+	 ul{
+		list-style-type: none;
+		/*padding-right: 2rem;*/
+		padding-left: 0;
+		}
+	a{
+		text-decoration: none;
+		color: inherit;
+		}
+	a:hover{
+		background-color: $theme;
+		}
+	}
+
+	.rubriques-articles > ul > li > a{
+		order-bottom: 2px solid $theme; 
+		text-transform: uppercase;
+		padding-left: 1rem;
+	}
+
+
+/* ================================================== 
+            /* #LES DIFFERENTES VUES
+             ================================================== */
+
+/* ====
+	Vue MOBILE FIRST
+	==== */
+
+		/* ====
+	main : bloc-page
+	==== */
+
+	.prix{
+	text-align: right;
+	color: $ecritureSecondaire;
+	background-color: $theme;
+	margin-bottom: 1rem;
+}
+
+article{
+	padding: 0 1rem 4rem 1rem;
+	border: 1px solid $theme;
+	margin-bottom: 1rem;
+	
+	a{
+	text-decoration: none;
+	}
+	p{
+	margin-bottom: 1rem;
+	}
+}
+
+.article-titre{
+	color: $theme;
+}
+.article-text{
+	color: $ecriture;
+}
+

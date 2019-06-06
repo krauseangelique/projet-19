@@ -1,0 +1,58 @@
+/* header_footer */
+
+.header{
+	background-color: $couleurFondHeader; // brun brique A ENLEVER
+
+}
+.mix-white-40{
+	background-color: $theme; /* ici mix-white-40 est sur l'active */
+}
+
+
+.logo img{
+	@extend %inlineBlock;
+}
+ #info-logo{
+	@extend %inlineBlock;
+}
+
+
+/* ====
+	nav-menu
+	==== */
+/* à mettre en display none en mobile puis via media queries le mettre en display block 
+.nav-menu{
+	display: none;
+}
+*/
+/* ================================================== 
+            /* #LES DIFFERENTES VUES
+             ================================================== */
+
+/* ====
+	Vue MOBILE FIRST
+	==== */
+
+/* ====
+	header
+	==== */
+.headPrincipal{
+	text-align:center;
+
+}
+
+.nav-menu{
+	display: none;
+}
+
+/* ====
+	Vue TABLETTE
+	==== */
+@media screen and (min-width: 640px){
+	.headPrincipal{
+		display:flex;
+	}
+	.form{
+	margin-top: 1rem;
+	}
+}

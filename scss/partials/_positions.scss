@@ -1,0 +1,58 @@
+.logo img, #info-logo {
+    display: inline-block;
+}
+
+.rubriques-articles ul{
+	ul{
+		display: none;
+	}
+}
+
+.rubriques-articles > ul > li > a{
+	display: block;
+}
+
+/* ================================================== 
+            /* #LES DIFFERENTES VUES
+             ================================================== */
+
+/* ====
+	Vue MOBILE FIRST
+	==== */
+
+
+	/* ====
+	main : bloc-page
+	==== */
+
+.prix{
+	position: absolute;
+	left: 1rem;
+	right: 2rem;
+	bottom: 5px;
+}
+
+.article{
+	position: relative;
+}
+
+.menu, .img{
+	display: none;
+}
+
+/* ================================================== 
+            /* #LES DIFFERENTES PAGES
+             ================================================== */
+	
+		/* ====
+			Vue MOBILE FIRST
+			==== */
+
+	/* ====
+		pages DETAIL
+		==== */
+
+
+.big-detail{
+	display:none;
+}

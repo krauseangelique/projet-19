@@ -1,0 +1,109 @@
+@charset 'utf-8';
+/* permet de forcer l’encodage UTF-8 dans le fichier principal */
+
+/* lier le fichier partial et les sous-fichiers : */
+
+@import 'partials/_color_variable_config';
+
+@import 'partials/_header_footer';
+@import 'partials/_grid';
+@import 'partials/_positions'; 
+@import 'partials/_mixin_placeholder';
+
+@import 'partials/_catalogue';
+@import 'partials/_detail';
+@import 'partials/_contact';
+
+
+/* lier la Google Font : */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300');
+
+
+	 *{
+
+		box-sizing: border-box;
+	}
+	html{
+		font-size: 62.5%;
+	}
+	body{
+		color: $ecriture; 
+		background-color: $couleurFondBody; //vert A ENLEVER
+		font-family: $fontFamilyBody; //sans serif
+    	font-size: 1.4rem;
+	}
+	.bloc-page{
+		max-width: 960px; // CONTAINER
+		@extend %center; 
+		padding-left: $space;
+		padding-right: $space;
+
+	}
+
+	h1,h2,h3,h4,h5,h6{
+	font-family: $fontFamilyTitres;
+	}
+
+	h1{
+		&#info-logo{
+			margin: 0;
+    		margin-left: 0;
+
+		}
+		>span{
+			display: none;
+		}
+	}
+
+	h3{
+		color: $theme;
+		font-size: 2rem;
+		background-color: inherit;
+
+	}
+
+
+	/* ====
+	fil d'Ariane : dans une section, une liste à puces;
+	==== */
+
+	.ariane{
+	background-color: $theme; 
+	text-transform: uppercase;
+	list-style-type: none;
+	display: flex;
+	padding:1rem 0;
+
+		a{
+		text-decoration: none;
+		color: $ecriture; 
+		}
+		&:nth-child(1){
+		color:$ecritureSecondaire; //ici BLANC
+		}
+	}
+
+	
+
+/* ================================================== 
+            /* #LES DIFFERENTES VUES
+             ================================================== */
+
+/* ====
+	Vue MOBILE FIRST
+	==== */
+
+
+	/* ====
+	main : bloc-page
+	==== */
+
+	/* ???  ??? */	
+	
+	.img-home, .img-gazza {
+
+		img{
+		width: 16rem;
+		height: 12rem;
+		}
+	}

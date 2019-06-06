@@ -1,0 +1,32 @@
+/* ================================================== 
+            /* #LES DIFFERENTES PAGES
+             ================================================== */
+	
+		/* ====
+			Vue MOBILE FIRST
+			==== */
+
+	/* ====
+		pages DETAIL
+		==== */
+
+
+.prix-detail{
+	text-align: left;
+	color: $ecritureSecondaire;
+	background-color: $theme; // ici bleu clair 
+	padding: 0.7rem 0 0.7rem 0.5rem;
+	margin-bottom: 2rem;
+		
+}
+
+.contenu-detail{
+	padding: 0 1rem;
+}
+
+#petite-majuscule{
+	font-variant: small-caps;
+	font-weight: bolder;
+	font-size: 1.7rem;
+	margin-bottom: 0.2rem;
+}

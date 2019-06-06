@@ -1,0 +1,61 @@
+/* ================================================== 
+            /* #LES DIFFERENTES PAGES
+             ================================================== */
+	
+		/* ====
+			Vue MOBILE FIRST
+			==== */
+
+	/* ====
+		page CONTACT ==> à REALISER (ce n'est pas encore en ordre)
+		==== */
+
+	.plan iframe{
+		height:95%;
+	} 
+
+	.infos{
+
+		 p{
+			padding-left: 1rem;
+			}
+		 a{
+			text-decoration: none;
+			color: inherit;
+			}
+	}
+
+	.bold{
+		font-weight: 700;
+	}
+
+	[class^="form--titre"]{
+		background-color: $theme; /* bleu très très clair !!! placer la  class="mix-white-40"*/
+		color: inherit;
+		padding: 1rem 0;
+		margin: 0; /* la margin est remplacée par le padding pour respecter le modèle */
+	}
+
+	input[type="email"]:valid {
+		background-color: green; /* A ENLEVER AU MOMENT DE RENDRE LE TRAVAIL */
+	}
+	.renseignement {
+
+		input{
+		height: 4rem;
+		width: 19rem;
+		}
+
+		div:first-child{
+			 p{
+				text-align: right;
+				padding-right: 2rem;
+			}
+		}
+
+		textarea{
+			margin-top: 1rem;
+		}
+	}
+	
+	

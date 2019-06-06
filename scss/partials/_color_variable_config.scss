@@ -1,0 +1,44 @@
+
+// Les variables COULEURS dans un sous-dossier partials
+
+
+
+
+$theme: rgb(170,213,223); /*RECOMMENDATION convertion #AAD5DF en rgb(170,213,223) VOIR MIEUX HSL Hue 191° Saturation 45.3 % Lightness 77.1 = bleu ciel */
+
+$theme: rgb(170,213,223);
+
+@for $i from 20 through 100 {
+  @if $i % 10 == 0 {
+    $percentage: $i*1%;
+    .darken-#{$i} {
+      background-color: darken($theme, $percentage);
+    }
+    .lighten-#{$i} {
+      background-color: lighten($theme, $percentage);
+    }
+    .mix-black-#{$i} {
+      background-color: mix(black, $theme, $percentage);
+    }
+    .mix-white-#{$i} {
+      background-color: mix(white, $theme, $percentage);
+    }
+  }
+}
+
+
+$ecriture: rgb(85,42,32); /*REC. conversion #552a20 en rgb(85,42,32) voir MIEUX hsl(11°,45%,23%) =  brun foncé écriture */
+
+$ecriturePageActive: rgb(163,138,124); /*REC. conversion #A38A7C en rgb(163,138,124) voir MIEUX hsl(22°,17%,56%) = brun gris blanc */
+
+$ecritureSecondaire: rgb(255,255,255); //ici BLANC
+
+$couleurFondBody: #ddeeaa; //vert clair A ENLEVER
+$couleurFondHeader: rgb(150,131,236); //brun brique
+
+
+
+$fontFamilyBody: "trebuchet MS", 
+    helvetica, Arial, sans-serif; 
+$fontFamilyTitres: "Open Sans","trebuchet MS", 
+    helvetica, Arial, sans-serif; 

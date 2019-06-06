@@ -1,0 +1,45 @@
+$sizes:(
+  xs:480px,
+  md:640px,
+  lg:1024px
+); 
+
+$grid-columns: 12;
+$space: 1rem;
+
+		.container{
+		margin-left: -$space;
+		margin-right: -$space;
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+	/*
+		
+		.row{
+			margin-left: -$space;
+			margin-left: -$space;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	*/
+
+		[class*="col-"]{
+			background-color: #20bffa;
+			color: inherit;
+			padding-right: $space;
+			padding-left: $space;
+			border: solid 1px #FFF;
+			flex-grow: 1;
+			flex-shrink:0;
+    }
+
+  @each $name, $size in $sizes{ /* name: xs, md, lg ; size: 480PX */
+    @media only screen and (min-width: $size){
+      @for $i from 1 through $grid-columns {
+	
+        .col-#{$name}-#{$i} {
+	       flex-basis: 100% / $grid-columns * $i;
+	}}}}
+
+
