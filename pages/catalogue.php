@@ -43,10 +43,10 @@
         </section>
        
       <!-- Corps de la page : CATALOGUE : Nous sommes sur les CHAISES et il y a une seconde NAV avec le menu pour les différents meubles --> 
-        <div class="bloc-page">
+        <div class="bloc-page ">
+            <div class="container">
             
-            
-                <nav class=" rubriques-articles col-md-3 col-lg-3 double  rose" >
+                <nav class=" rubriques-articles col-md-1 col-lg-1  rose" >
                     <ul>
                         <li><a href="#">chaises</a>
                             <ul> 
@@ -69,9 +69,9 @@
      <!-- FIN de nav -->
 
                 
-                <main  class="content  container col-md-9  col-lg-9">
+                <main  class="content  container col-md-9  col-lg-8">
 
-                    <article class="article lg-item-triple md-item-triple">
+                    <article class="article col-md-5 col-lg-2 ">
                         <figure class="img">
                             <a href="detail.php">
                                <img src="../img/IMG_7957x z_275x275.jpg" alt="chaise Bombay" /> 
@@ -82,7 +82,7 @@
                         <div class="prix"> 119 €</div> 
                     </article>
 
-                    <article class="article lg-item-triple md-item-triple">
+                    <article class="article col-md-5 col-lg-2">
                         <figure class="img">
                             <a href="#">
                                 <img src="../img/IMG_5792_275x275.jpg" alt="chaise Kina Acier" />
@@ -92,7 +92,7 @@
                         <p><a href="#" class="article-text">Une belle chaise d'acier avec un design lisse et solide sans pareil et un vrais attachant à votre table <br> [...]</a> </p>
                         <div class="prix"> 89 €</div> 
                     </article>
-                    <article class="article lg-item-triple md-item-triple">
+                    <article class="article col-md-5 col-lg-2">
                         <figure class="img">
                             <a href="#">
                                 <img src="../img/IMG_06579_275x275.jpg" alt="chaise Peaky Blue" />
@@ -102,7 +102,7 @@
                         <p><a href="#" class="article-text">Lovely pour s'assoire et belle à regarder. Les chaises de salle à manger ne devrais pas selement être confortable. Elle doivent aussi avoir l'air bien moderne et bien ajusté <br> [...]</a> </p>
                         <div class="prix"> 99 €</div> 
                     </article>
-                    <article class="article lg-item-triple md-item-triple">
+                    <article class="article col-md-5 col-lg-2">
                         <figure class="img">
                             <a href="#">
                                 <img src="../img/IMG_3291_275x275.jpg" alt="DSW Red" />
@@ -112,7 +112,7 @@
                         <p><a href="#" class="article-text"> Pour ceux qui veulle être à l'aise et à la mode. Avec le siège DSW Style vous êtes bon! Une chaise facile et confortable qui, sans vouloir attirer l'attention s'adapte. <br> [...]</a> </p>
                         <div class="prix"> 89 €</div> 
                     </article>
-                    <article class="article lg-item-triple md-item-triple">
+                    <article class="article col-md-5 col-lg-2">
                         <figure class="img">
                             <a href="#">
                                 <img src="../img/IMG_5793_275x275.jpg" alt="chaise V Bar" />
@@ -122,7 +122,7 @@
                         <p><a href="#" class="article-text"> Une belle chaise d'acier avec un design lisse et solide sans pareil et un vrais attachant à votre table de bar <br> [...]</a> </p>
                         <div class="prix"> 89 €</div> 
                     </article>
-                    <article class='article lg-item-triple'>
+                    <article class="article col-md-5 col-lg-2">
                         <figure class="img">
                             <a href="#">
                                 <img src="../img/IMG_0797_275x275.jpg" alt="chaise Pezy" />
@@ -132,7 +132,7 @@
                         <p><a href="#" class="article-text">a chaise Pezi est un siège de fil très serré et peut être utilisé dans différents styles d'intérieur. <br> [...]</a> </p>
                         <div class="prix"> 69 €</div> 
                     </article>
-                    <article class="article lg-item-triple md-item-triple ">
+                    <article class="article col-md-5 col-lg-2 ">
                         <figure class="img">
                             <a href="#">
                                 <img src="../img/IMG_1898_275x275.jpg" alt="chaise Tulip" />
@@ -142,7 +142,7 @@
                         <p><a href="#" class="article-text">Cette chaise est connue pour son siège en forme de tube spécifique. L'habitacle magnifiquement formé et équipé d'un cousin mou et donc très confortable. Le cockpit est fait de <br> [...]</a> </p>
                         <div class="prix"> 89 €</div> 
                     </article>
-                    <article class='article lg-item-triple md-item-triple'>
+                    <article class="article col-md-5 col-lg-2">
                         <figure class="img">
                             <a href="#">
                                 <img src="../img/bert-jn-zw_275x275.jpg" alt="chaise Bertoia" />
@@ -153,7 +153,8 @@
                         <div class="prix"> 99 €</div> 
                     </article>
                  
-            </main>
+                 </main>
+            </div>
         </div>
         
         </div>      

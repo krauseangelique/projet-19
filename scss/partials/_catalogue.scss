@@ -1,3 +1,4 @@
+/* FICHIER : _catalogue.scss */
 /* ================================================== 
             /* #LES DIFFERENTES PAGES
              ================================================== */
@@ -71,3 +72,16 @@ article{
 	color: $ecriture;
 }
 
+/* ====
+	Vue TABLETTE
+	==== */
+
+	@media screen and (min-width : $md){
+		article img {
+ 			 width: 110px; }
+	}
+	@media screen and (min-width : $lg){
+		article img{
+ 			 width: 130px; }
+	}
+	

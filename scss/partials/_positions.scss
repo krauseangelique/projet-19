@@ -1,3 +1,4 @@
+/* FICHIER : _positions.scss */
 .logo img, #info-logo {
     display: inline-block;
 }
@@ -49,10 +50,17 @@
 			==== */
 
 	/* ====
-		pages DETAIL
+		page DETAIL
 		==== */
 
 
 .big-detail{
 	display:none;
 }
+	/* ===
+	    page CATALOGUE
+	    ==== */
+	@media screen and (min-width : $md){
+		.menu, .img {
+ 			 display: block; }
+	}

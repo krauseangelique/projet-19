@@ -1,7 +1,8 @@
+/* FICHIER : _grid.scss */
 $sizes:(
-  xs:480px,
-  md:640px,
-  lg:1024px
+  xs:$xs,
+  md:$md,
+  lg:$lg
 ); 
 
 $grid-columns: 12;
@@ -42,13 +43,14 @@ $space: 1rem;
 	       flex-basis: 100% / $grid-columns * $i;
 		}
 		.col-#{$name}-#{$i} > .#{$name}-item-double {
-			flex: 1 1 calc(100% * 2 / $i - $space);
+	       flex-basis: (100% * 2) / $grid-columns * $i;
 		}
 		.col-#{$name}-#{$i} > .#{$name}-item-triple {
-			flex: 1 1 calc(100% * 3 / $i - $space); 
-			
+	       flex-basis: (100%  * 3) / $grid-columns * $i;
 		}
 
+
+		
 	}}}
 
 

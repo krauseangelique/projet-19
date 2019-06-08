@@ -1,7 +1,10 @@
-
+/* FICHIER : _color_variable_config.scss */
 // Les variables COULEURS dans un sous-dossier partials
 
-
+/* TAILLE : point de rupture des media-queries */
+$xs:480px;
+ $md:640px;
+ $lg:1024px;
 
 
 $theme: rgb(170,213,223); /*RECOMMENDATION convertion #AAD5DF en rgb(170,213,223) VOIR MIEUX HSL Hue 191° Saturation 45.3 % Lightness 77.1 = bleu ciel */

@@ -1,13 +1,14 @@
+/* FICHIER : styles.scss */
 @charset 'utf-8';
 /* permet de forcer l’encodage UTF-8 dans le fichier principal */
 
 /* lier le fichier partial et les sous-fichiers : */
 
 @import 'partials/_color_variable_config';
-
-@import 'partials/_header_footer';
 @import 'partials/_grid';
 @import 'partials/_positions'; 
+@import 'partials/_header_footer';
+
 @import 'partials/_mixin_placeholder';
 
 @import 'partials/_catalogue';
