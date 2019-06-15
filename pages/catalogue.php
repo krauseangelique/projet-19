@@ -8,15 +8,14 @@
 <html lang="fr">
 
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- je vais faire un INCLUDE des meta et des links -->
+         <?php   
+            include PATH.'includes/head.inc.php';
+        ?>
+        <!-- FIN de l'include -->
+
+       
         <title>Vintage 2019 : Catalogue</title>
-    <!-- les nouvelles balises header aside footer etc. ne sont pas reconnues par les anciens navigateurs, je vais rajouter un commentaire conditionnel pour internet explorers -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-        <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
 
     </head>
 

@@ -7,24 +7,17 @@ define("PATH","./");
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+     <head>
+    <!-- je vais faire un INCLUDE des meta et des links -->
+
         <title>Vintage 2019 : ACCUEIL</title>
-    <!-- les nouvelles balises header aside footer etc. ne sont pas reconnues par les anciens navigateurs, je vais rajouter un commentaire conditionnel pour internet explorers -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-<!-- comme j' appelle la google font via le scss, je ne dois plus l'appeler via le link 
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
--->
-
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
 
+     <?php   
+            include PATH.'includes/head.inc.php';
+        ?>
+        <!-- FIN de l'include -->
     </head>
-
 
     <body>
 

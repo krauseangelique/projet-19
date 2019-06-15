@@ -1,16 +1,15 @@
-/* FICHIER : _grid.scss */
 $sizes:(
-  xs:$xs,
-  md:$md,
-  lg:$lg
+  xs:480px,
+  md:640px,
+  lg:1024px
 ); 
 
 $grid-columns: 12;
 $space: 1rem;
 
 		.container{
-		margin-left: -$space;
-		margin-right: -$space;
+		margin-left: 0;
+		/*margin-right: $space;*/
 		display: flex;
 		flex-wrap: wrap;
 
@@ -26,14 +25,38 @@ $space: 1rem;
 	*/
 
 		[class*="col-"]{
-			background-color: #20bffa;
+			
 			color: inherit;
 			padding-right: $space;
 			padding-left: $space;
 			border: solid 1px #FFF;
+			margin-top: $space;
+
+			margin-left: $space;
+			/*margin-right: $space;*/
+			
 			flex-grow: 1;
 			flex-shrink:0;
     }
+
+[class*="col-"]:first-child {
+	margin-left: 0;
+}
+
+    	[class*="nospace-"]{
+    		color: inherit;
+			padding-right: $space;
+			padding-left: $space;
+			border: solid 1px #FFF;
+			margin-top: $space;
+
+			margin-left:0;
+			margin-right: 0;
+
+			flex-grow: 1;
+			flex-shrink:0;
+    		 
+    	}
 
   @each $name, $size in $sizes{ /* name: xs, md, lg ; size: 480PX */
     @media only screen and (min-width: $size){
@@ -41,16 +64,11 @@ $space: 1rem;
 	
         .col-#{$name}-#{$i} {
 	       flex-basis: 100% / $grid-columns * $i;
-		}
-		.col-#{$name}-#{$i} > .#{$name}-item-double {
-	       flex-basis: (100% * 2) / $grid-columns * $i;
-		}
-		.col-#{$name}-#{$i} > .#{$name}-item-triple {
-	       flex-basis: (100%  * 3) / $grid-columns * $i;
-		}
-
-
-		
+	       }
+	
+		 .nospace-#{$name}-#{$i} {
+	       flex-basis: 100% / $grid-columns * $i;
+	       }
 	}}}
 
 
