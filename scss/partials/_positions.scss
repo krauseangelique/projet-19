@@ -1,14 +1,20 @@
 /* FICHIER : _positions.scss */
+
 /* ================================================== 
-            /* #LES DIFFERENTES VUES
+            /* #LES DIFFERENTES PAGES
              ================================================== */
-/* ====
-	Vue MOBILE FIRST
-	==== */
+	
+		/* ====
+			Vue MOBILE FIRST
+			==== */
 
 	/* ====
-		header
+		page CATALOGUE
 		==== */
+
+		/* ====
+			header
+			==== */
 
 
 	.logo img, #info-logo, .form{
@@ -41,6 +47,9 @@
 		@extend %flex;
 	}
 
+	/* ====
+	  2ième menu avec une NAV pour les différents MEUBLES 
+	 ==== */
 .rubriques-articles ul{
 	ul{
 		@extend %none;
@@ -51,18 +60,11 @@
 	@extend %none;
 }
 
-/* ================================================== 
-            /* #LES DIFFERENTES VUES
-             ================================================== */
-
-/* ====
-	Vue MOBILE FIRST
-	==== */
-
 
 	/* ====
 	main : bloc-page
 	==== */
+
 
 .prix{
 	position: absolute;
@@ -76,29 +78,22 @@
 }
 
 .menu, .img{
-	display: none;
+	@extend %none;
 }
 
-/* ================================================== 
-            /* #LES DIFFERENTES PAGES
-             ================================================== */
-	
-		/* ====
-			Vue MOBILE FIRST
-			==== */
-
-	/* ====
-		page DETAIL
-		==== */
-
-
 .big-detail{
-	display:none;
+	@extend %none;
 }
 	/* ===
 	    page CATALOGUE
 	    ==== */
 	@media screen and (min-width : $md){
+
 		.menu, .img {
- 			 display: block; }
+			  display: block; }
+		
+	   .rubriques-articles > ul > li > a{
+			 display: block;
+			}
+			  
 	}

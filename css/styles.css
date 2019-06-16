@@ -311,14 +311,17 @@
 
 /* FICHIER : _positions.scss */
 /* ================================================== 
-            /* #LES DIFFERENTES VUES
+            /* #LES DIFFERENTES PAGES
              ================================================== */
 /* ====
-	Vue MOBILE FIRST
-	==== */
+			Vue MOBILE FIRST
+			==== */
 /* ====
-		header
+		page CATALOGUE
 		==== */
+/* ====
+			header
+			==== */
 .headPrincipal {
   text-align: center; }
 
@@ -328,12 +331,9 @@
 /* ====
 		fil d'Ariane 
 		==== */
-/* ================================================== 
-            /* #LES DIFFERENTES VUES
-             ================================================== */
 /* ====
-	Vue MOBILE FIRST
-	==== */
+	  2ième menu avec une NAV pour les différents MEUBLES 
+	 ==== */
 /* ====
 	main : bloc-page
 	==== */
@@ -346,26 +346,13 @@
 .article {
   position: relative; }
 
-.menu, .img {
-  display: none; }
-
-/* ================================================== 
-            /* #LES DIFFERENTES PAGES
-             ================================================== */
-/* ====
-			Vue MOBILE FIRST
-			==== */
-/* ====
-		page DETAIL
-		==== */
-.big-detail {
-  display: none; }
-
 /* ===
 	    page CATALOGUE
 	    ==== */
 @media screen and (min-width: 640px) {
   .menu, .img {
+    display: block; }
+  .rubriques-articles > ul > li > a {
     display: block; } }
 
 /* FICHIER : _header_footer.scss */
@@ -418,7 +405,7 @@
 .logo img, #info-logo, .form {
   display: inline-block; }
 
-h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a {
+h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a, .menu, .img, .big-detail {
   display: none; }
 
 .ariane {
