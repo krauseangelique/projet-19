@@ -7,7 +7,7 @@ $xs:480px;
  $lg:1024px;
 
 
-$theme: rgb(170,213,223); /*RECOMMENDATION convertion #AAD5DF en rgb(170,213,223) VOIR MIEUX HSL Hue 191° Saturation 45.3 % Lightness 77.1 = bleu ciel */
+/*RECOMMENDATION SASS convertion #AAD5DF en rgb(170,213,223) VOIR MIEUX HSL Hue 191° Saturation 45.3 % Lightness 77.1 = bleu ciel */
 
 $theme: rgb(170,213,223);
 
@@ -35,6 +35,7 @@ $ecriture: rgb(85,42,32); /*REC. conversion #552a20 en rgb(85,42,32) voir MIEUX 
 $ecriturePageActive: rgb(163,138,124); /*REC. conversion #A38A7C en rgb(163,138,124) voir MIEUX hsl(22°,17%,56%) = brun gris blanc */
 
 $ecritureSecondaire: rgb(255,255,255); //ici BLANC
+$ecritureTer: rgb(0,0,0); //ici NOIR
 
 $couleurFondBody: #ddeeaa; //vert clair A ENLEVER
 $couleurFondHeader: rgb(150,131,236); //brun brique

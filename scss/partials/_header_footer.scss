@@ -10,12 +10,8 @@
 }
 
 
-.logo img{
-	@extend %inlineBlock;
-}
- #info-logo{
-	@extend %inlineBlock;
-}
+
+ 
 
 
 /* ====
@@ -34,17 +30,9 @@
 	Vue MOBILE FIRST
 	==== */
 
-/* ====
-	header
-	==== */
-.headPrincipal{
-	text-align:center;
-
-}
-
-.nav-menu{
-	display: none;
-}
+	/* ====
+		header
+		==== */
 
 /* ====
 	Vue TABLETTE

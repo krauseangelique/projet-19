@@ -1,16 +1,54 @@
 /* FICHIER : _positions.scss */
-.logo img, #info-logo {
-    display: inline-block;
-}
+/* ================================================== 
+            /* #LES DIFFERENTES VUES
+             ================================================== */
+/* ====
+	Vue MOBILE FIRST
+	==== */
+
+	/* ====
+		header
+		==== */
+
+
+	.logo img, #info-logo, .form{
+		@extend %inlineBlock;
+	}
+
+	h1>span{
+		@extend %none;
+	}
+
+		.headPrincipal{
+			text-align:center;
+		
+		}
+		/* ====
+			nav-menu
+			==== */
+		
+		.nav-menu{
+			@extend %none;
+		}
+		
+
+
+	/* ====
+		fil d'Ariane 
+		==== */
+
+	.ariane{
+		@extend %flex;
+	}
 
 .rubriques-articles ul{
 	ul{
-		display: none;
+		@extend %none;
 	}
 }
 
 .rubriques-articles > ul > li > a{
-	display: block;
+	@extend %none;
 }
 
 /* ================================================== 

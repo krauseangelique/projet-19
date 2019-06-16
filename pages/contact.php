@@ -1,8 +1,7 @@
-<!--  définition des CHEMINS  -->
-    <?php
+<?php
         define("PATH", "../");
-    ?>
-
+?>
+<!--  définition des CHEMINS  -->
 <!DOCTYPE html>
 <html lang="fr">
 

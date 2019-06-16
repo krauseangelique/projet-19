@@ -1,8 +1,8 @@
-<!-- pour que mes liens soient opérationnels sur CHAQUE page je vais modifier le chemin PATH -->
 <?php 
 define("PATH","./");
 
 ?>
+<!-- pour que mes liens soient opérationnels sur CHAQUE page je vais modifier le chemin PATH -->
 
 <!DOCTYPE html>
 <html lang="fr">

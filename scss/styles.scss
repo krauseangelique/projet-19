@@ -51,6 +51,10 @@
     		margin-left: 0;
 
 		}
+		/* pour le référencement, il est utile d'avoir un h1
+		sur chaque page avec du texte => ici le nom de la société;
+		 donc dans l'image du logo, je mets un span 
+		 */
 		>span{
 			display: none;
 		}
@@ -63,17 +67,21 @@
 
 	}
 
+	P{
+		color:$ecritureTer;
+	}
+
 
 	/* ====
-	fil d'Ariane : dans une section, une liste à puces;
+	fil d'Ariane 
 	==== */
 
 	.ariane{
-	background-color: $theme; 
-	text-transform: uppercase;
-	list-style-type: none;
-	display: flex;
-	padding:1rem 0;
+		background-color: $theme; 
+		text-transform: uppercase;
+		list-style-type: none;
+		
+		padding:1rem 0;
 
 		a{
 		text-decoration: none;

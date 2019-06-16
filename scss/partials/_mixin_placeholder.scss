@@ -16,7 +16,18 @@
 	margin: 0 auto;
 
 }
+%block {
+	display: block;
+}
 
-%inlineBlock{
+%inlineBlock {
 	display: inline-block;
+}
+
+%none {
+	display: none;
+}
+
+%flex {
+	display: flex;
 }

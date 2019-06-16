@@ -27,7 +27,7 @@
 	}
 
 	.rubriques-articles > ul > li > a{
-		order-bottom: 2px solid $theme; 
+		border-bottom: 2px solid $theme; 
 		text-transform: uppercase;
 		padding-left: 1rem;
 	}
