@@ -47,9 +47,9 @@
             <iframe class="col-lg-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10120.85335412887!2d5.554299717003033!3d50.64172893792035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0fa164d5c4969%3A0xd379a00de93c696!2sRue+St+Laurent+33%2C+4000+Li%C3%A8ge!5e0!3m2!1sfr!2sbe!4v1528832800927" width="600" height="450"  style="border:0" allowfullscreen></iframe>
         </div>
         <div class="container">
-            <section class="global-contact contenu col-lg-3 vert">
+            <section class=" container global-contact contenu col-lg-3 vert">
 
-                <div class="infos lg-item-simple jaune">
+                <div class="infos col-md-3 col-lg-3 ">
                     <h3 class="form--titre--infos mix-white-40">Infos contact ! </h3>
                     <div >
                         <p>
@@ -73,12 +73,12 @@
                     </div>
                 </div>
 
-                <div class="  lg-item-double">
+                <div class="  col-md-8 col-lg-8 ">
                     <h3 class="form--titre--contact mix-white-40">Contactez-nous ! </h3>
 
 
-                    <form class= "renseignement col-lg-2 " name="inscription" method="post" action="destination.php">
-                        <div class="lg-item-simple">
+                    <form class= " container renseignement  " name="inscription" method="post" action="destination.php">
+                        <div class="col-md-5 col-lg-5">
                             <p>
                                 <label for="nom">Nom : </label>
                             <input type="text" name="nom" id="nom"  autofocus >
@@ -101,8 +101,8 @@
                                 <input type="submit" name="contact" class="button" value="ENVOYER">
                             </p>
                         </div>
-                        <div class="lg-item-simple">
-                            <textarea name="commentaire" placeholder="Un commentaire ?" id="commentaire" rows="18" cols="40"></textarea> 
+                        <div class="col-md-5 col-lg-5">
+                            <textarea name="commentaire" placeholder="Un commentaire ?" id="commentaire" rows="16" cols="30"></textarea> 
                         </div>
                     </form>
                     

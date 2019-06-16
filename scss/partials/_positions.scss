@@ -95,5 +95,19 @@
 	   .rubriques-articles > ul > li > a{
 			 display: block;
 			}
+
+		.rubriques-articles ul{
+			ul{
+				display: block;
+			}
+		}
+
+		.nav-menu{
+			display: flex;
+			
+			}
+		.headPrincipal{
+			display:flex;
+		}
 			  
 	}

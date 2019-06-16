@@ -30,6 +30,7 @@
 		font-weight: 700;
 	}
 
+
 	[class^="form--titre"]{
 		background-color: $theme; /* bleu très très clair !!! placer la  class="mix-white-40"*/
 		color: inherit;
@@ -42,9 +43,9 @@
 	}
 	.renseignement {
 
-		input{
-		height: 4rem;
-		width: 19rem;
+		input[type*="email"] , input[type*="text"]{
+		height: 3rem;
+		width: 15rem;
 		}
 
 		div:first-child{
@@ -60,3 +61,9 @@
 	}
 	
 	
+@media screen and (min-width : $md){
+	
+	form.renseignement{
+		flex-wrap: nowrap;
+	}
+}

@@ -116,6 +116,26 @@
 
 /*REC. conversion #552a20 en rgb(85,42,32) voir MIEUX hsl(11°,45%,23%) =  brun foncé écriture */
 /*REC. conversion #A38A7C en rgb(163,138,124) voir MIEUX hsl(22°,17%,56%) = brun gris blanc */
+/* FICHIER : _mixin_placeholder.scss */
+/* ====
+	MIXIN
+	==== */
+/* ====
+	PLACEHOLDER
+	==== */
+.bloc-page {
+  display: block;
+  margin: 0 auto; }
+
+.logo img, #info-logo, .form {
+  display: inline-block; }
+
+h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a, .menu, .img, .big-detail {
+  display: none; }
+
+.ariane {
+  display: flex; }
+
 .container {
   margin-left: 0;
   /*margin-right: $space;*/
@@ -353,24 +373,15 @@
   .menu, .img {
     display: block; }
   .rubriques-articles > ul > li > a {
-    display: block; } }
+    display: block; }
+  .rubriques-articles ul ul {
+    display: block; }
+  .nav-menu {
+    display: flex; }
+  .headPrincipal {
+    display: flex; } }
 
 /* FICHIER : _header_footer.scss */
-.header {
-  background-color: #9683ec; }
-
-.mix-white-40 {
-  background-color: #aad5df;
-  /* ici mix-white-40 est sur l'active */ }
-
-/* ====
-	nav-menu
-	==== */
-/* à mettre en display none en mobile puis via media queries le mettre en display block 
-.nav-menu{
-	display: none;
-}
-*/
 /* ================================================== 
             /* #LES DIFFERENTES VUES
              ================================================== */
@@ -380,36 +391,29 @@
 /* ====
 		header
 		==== */
+.header {
+  background-color: #9683ec; }
+
+.mix-white-40 {
+  background-color: #aad5df;
+  /* ici mix-white-40 est sur l'active */ }
+
 /* ====
 	Vue TABLETTE
 	==== */
 @media screen and (min-width: 640px) {
-  .headPrincipal {
-    display: flex; }
   .form {
     margin-top: 1rem; }
   .nav-menu {
-    display: block; } }
-
-/* FICHIER : _mixin_placeholder.scss */
-/* ====
-	MIXIN
-	==== */
-/* ====
-	PLACEHOLDER
-	==== */
-.bloc-page {
-  display: block;
-  margin: 0 auto; }
-
-.logo img, #info-logo, .form {
-  display: inline-block; }
-
-h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a, .menu, .img, .big-detail {
-  display: none; }
-
-.ariane {
-  display: flex; }
+    padding: 0 1rem;
+    margin: 1rem;
+    list-style-type: none;
+    justify-content: space-around; }
+    .nav-menu a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      color: black; } }
 
 /* FICHIER : _catalogue.scss */
 /* ================================================== 
@@ -540,9 +544,9 @@ input[type="email"]:valid {
   background-color: green;
   /* A ENLEVER AU MOMENT DE RENDRE LE TRAVAIL */ }
 
-.renseignement input {
-  height: 4rem;
-  width: 19rem; }
+.renseignement input[type*="email"], .renseignement input[type*="text"] {
+  height: 3rem;
+  width: 15rem; }
 
 .renseignement div:first-child p {
   text-align: right;
@@ -550,6 +554,10 @@ input[type="email"]:valid {
 
 .renseignement textarea {
   margin-top: 1rem; }
+
+@media screen and (min-width: 640px) {
+  form.renseignement {
+    flex-wrap: nowrap; } }
 
 /* lier la Google Font : */
 * {

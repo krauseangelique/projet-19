@@ -1,27 +1,5 @@
 /* FICHIER : _header_footer.scss */
 
-
-.header{
-	background-color: $couleurFondHeader; // brun brique A ENLEVER
-
-}
-.mix-white-40{
-	background-color: $theme; /* ici mix-white-40 est sur l'active */
-}
-
-
-
- 
-
-
-/* ====
-	nav-menu
-	==== */
-/* à mettre en display none en mobile puis via media queries le mettre en display block 
-.nav-menu{
-	display: none;
-}
-*/
 /* ================================================== 
             /* #LES DIFFERENTES VUES
              ================================================== */
@@ -34,18 +12,35 @@
 		header
 		==== */
 
+.header{
+	background-color: $couleurFondHeader; // brun brique A ENLEVER
+
+}
+.mix-white-40{
+	background-color: $theme; /* ici mix-white-40 est sur l'active */
+}
+
+
 /* ====
 	Vue TABLETTE
 	==== */
-@media screen and (min-width: 640px){
-	.headPrincipal{
-		display:flex;
-	}
-	.form{
-	margin-top: 1rem;
-	}
-	.nav-menu{
-	display: block;
+
+	@media screen and (min-width: $md){
 	
+		.form{
+		margin-top: 1rem;
+		}
+		.nav-menu{
+		padding: 0 1rem;
+		margin: 1rem;  
+		list-style-type: none;
+		justify-content: space-around;
+
+			a{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.4rem;
+			color: $ecritureTer;
+			}   
+		}
 	}
-}
