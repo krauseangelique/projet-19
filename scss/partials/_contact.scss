@@ -39,7 +39,7 @@
 	}
 
 	input[type="email"]:valid {
-		background-color: green; /* A ENLEVER AU MOMENT DE RENDRE LE TRAVAIL */
+		background-color: $couleurFondActive; //vert
 	}
 	.renseignement {
 

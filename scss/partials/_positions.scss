@@ -35,7 +35,7 @@
 			==== */
 		
 		
-		nav .nav-menu{
+		.nav-menu{
 			@extend %none;
 		}
 
@@ -81,21 +81,48 @@
 .menu, .img{
 	@extend %none;
 }
-
+	/* ===
+	    page DETAIL
+		==== */
 
 .big-detail{
 	@extend %none;
 }
+	
+		
+
+
 	/* ===
 	    page CATALOGUE
 	    ==== */
 	@media screen and (min-width : $md){
 
 		.menu, .img {
-			  display: block; }
-		
+			display: block;
+		 }
+
+		.nav-menu{
+			display: flex;
+
+			li{
+				display: flex;
+			}
+			a{
+				display: block;
+			}
+
+		}
+
+		.menu{
+			display: flex;
+		}
+
+		.rubriques-articles{
+			padding-right: 3rem;
+		}
+
 	   .rubriques-articles > ul > li > a{
-			 display: block;
+			display: block;
 			}
 
 		.rubriques-articles ul{
@@ -106,6 +133,26 @@
 	
 		.headPrincipal{
 			display: flex;
+		}
+
+		/* ====
+			PAGE HOME 
+			==== */	
+			
+		.img-slide{
+				
+				background-position: 25% 75%; /* Positionnement FIN de l'image */
+		
+		}
+		
+		.img{
+			display: block;
+		}
+		
+		.big-detail{
+			img{
+				display: block;
+			}
 		}
 			  
 	}

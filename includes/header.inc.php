@@ -48,7 +48,7 @@ $page = $path['filename'];
 
             <nav class=" nav-principal col-lg-3 col-md-3 "> <!--en display none EN MOBILE -->
 
-                <ul class=" container nav-menu vert">
+                <ul class="  nav-menu vert">
                     <!-- pour que mon fichier soit appelé je vais faire un ECHO du PATH chemin 
                     vers la page index.php ; ne pas OUBLIER de modifier les extentions de fichier 
                     de .html on passe en .php -->

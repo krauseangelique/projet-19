@@ -78,10 +78,36 @@ article{
 
 	@media screen and (min-width : $md){
 		article img {
- 			 width: 110px; }
+			  width: 110px;
+			 }
+		
+			 .rubriques-articles{
+				ul{
+					ul{
+						padding-left: 2rem;
+					}
+				}
+	
+			}
+			.article{
+				padding-bottom: 2rem;
+	
+				.prix{
+					visibility: hidden;
+					width: 95%;
+					transition: all 2s linear;
+				}
+			}
+			
+			
 	}
+
+		/* ====
+		Vue BUREAU
+		==== */
 	@media screen and (min-width : $lg){
 		article img{
- 			 width: 130px; }
+			  width: 13rem;
+		 }
 	}
 	

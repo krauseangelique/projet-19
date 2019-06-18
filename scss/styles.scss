@@ -98,7 +98,7 @@
 	
 
 /* ================================================== 
-            /* #LES DIFFERENTES VUES
+            /* # HOME PAGE : avec photos et slider à ne pas réaliser
              ================================================== */
 
 /* ====
@@ -109,13 +109,41 @@
 	/* ====
 	main : bloc-page
 	==== */
-
-	/* ???  ??? */	
-	
 	.img-home, .img-gazza {
+		img{
+			width: 16rem;
+			height: 12rem;
 
-		
-		width: 16rem;
-		height: 12rem;
-		
+		}
+	
 	}
+
+	
+/* ====
+	Vue TABLETTE
+	==== */
+
+	@media screen and (min-width: 570px){
+
+		.img {
+			img{
+				width: 15rem;
+				height: 15rem;
+			}
+		}
+		.img-slide{
+			background-image: url("../img/slide.jpg"); /* image de décoration */
+			background-size: cover; /* pour les images de FOND */
+			
+		}
+		.form{
+			text-align: right;
+		}
+		.contenu{
+			width: 90%;
+			margin: 0 auto;
+		}
+
+	}
+	
+	

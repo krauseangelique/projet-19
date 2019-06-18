@@ -130,7 +130,7 @@
 .logo img, #info-logo, .form {
   display: inline-block; }
 
-h1 > span, nav .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a, .menu, .img, .big-detail {
+h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a, .menu, .img, .big-detail {
   display: none; }
 
 .ariane {
@@ -368,17 +368,40 @@ h1 > span, nav .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > 
   position: relative; }
 
 /* ===
+	    page DETAIL
+		==== */
+/* ===
 	    page CATALOGUE
 	    ==== */
 @media screen and (min-width: 640px) {
   .menu, .img {
     display: block; }
+  .nav-menu {
+    display: flex; }
+    .nav-menu li {
+      display: flex; }
+    .nav-menu a {
+      display: block; }
+  .menu {
+    display: flex; }
+  .rubriques-articles {
+    padding-right: 3rem; }
   .rubriques-articles > ul > li > a {
     display: block; }
   .rubriques-articles ul ul {
     display: block; }
   .headPrincipal {
-    display: flex; } }
+    display: flex; }
+  /* ====
+			PAGE HOME 
+			==== */
+  .img-slide {
+    background-position: 25% 75%;
+    /* Positionnement FIN de l'image */ }
+  .img {
+    display: block; }
+  .big-detail img {
+    display: block; } }
 
 /* FICHIER : _header_footer.scss */
 /* ================================================== 
@@ -412,7 +435,16 @@ h1 > span, nav .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > 
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1.4rem;
-      color: black; } }
+      color: #552a20; }
+    .nav-menu li {
+      border-bottom: 0.2rem solid transparent; }
+    .nav-menu li:hover {
+      border-bottom: 0.2rem solid #aad5df; }
+    .nav-menu h2 {
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+      font-size: 1.3rem; } }
 
 /* FICHIER : _catalogue.scss */
 /* ================================================== 
@@ -476,11 +508,22 @@ article {
 	==== */
 @media screen and (min-width: 640px) {
   article img {
-    width: 110px; } }
+    width: 110px; }
+  .rubriques-articles ul ul {
+    padding-left: 2rem; }
+  .article {
+    padding-bottom: 2rem; }
+    .article .prix {
+      visibility: hidden;
+      width: 95%;
+      transition: all 2s linear; } }
 
+/* ====
+		Vue BUREAU
+		==== */
 @media screen and (min-width: 1024px) {
   article img {
-    width: 130px; } }
+    width: 13rem; } }
 
 /* FICHIER : _detail.scss */
 /* ================================================== 
@@ -507,6 +550,21 @@ article {
   font-weight: bolder;
   font-size: 1.7rem;
   margin-bottom: 0.2rem; }
+
+/* ====
+	Vue TABLETTE
+	==== */
+@media screen and (min-width: 640px) {
+  .big-detail img {
+    height: 26rem;
+    width: 26rem; } }
+
+/* ====
+	Vue BUREAU
+	==== */
+@media screen and (min-width: 1024px) {
+  prix-detail {
+    max-width: 50%; } }
 
 /* FICHIER : _contact.scss */
 /* ================================================== 
@@ -540,8 +598,7 @@ article {
   /* la margin est remplacée par le padding pour respecter le modèle */ }
 
 input[type="email"]:valid {
-  background-color: green;
-  /* A ENLEVER AU MOMENT DE RENDRE LE TRAVAIL */ }
+  background-color: #33fa33; }
 
 .renseignement input[type*="email"], .renseignement input[type*="text"] {
   height: 3rem;
@@ -616,7 +673,7 @@ P {
     color: white; }
 
 /* ================================================== 
-            /* #LES DIFFERENTES VUES
+            /* # HOME PAGE : avec photos et slider à ne pas réaliser
              ================================================== */
 /* ====
 	Vue MOBILE FIRST
@@ -624,7 +681,24 @@ P {
 /* ====
 	main : bloc-page
 	==== */
-/* ???  ??? */
-.img-home, .img-gazza {
+.img-home img, .img-gazza img {
   width: 16rem;
   height: 12rem; }
+
+/* ====
+	Vue TABLETTE
+	==== */
+@media screen and (min-width: 570px) {
+  .img img {
+    width: 15rem;
+    height: 15rem; }
+  .img-slide {
+    background-image: url("../img/slide.jpg");
+    /* image de décoration */
+    background-size: cover;
+    /* pour les images de FOND */ }
+  .form {
+    text-align: right; }
+  .contenu {
+    width: 90%;
+    margin: 0 auto; } }
