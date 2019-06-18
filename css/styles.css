@@ -130,7 +130,7 @@
 .logo img, #info-logo, .form {
   display: inline-block; }
 
-h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a, .menu, .img, .big-detail {
+h1 > span, nav .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li > a, .menu, .img, .big-detail {
   display: none; }
 
 .ariane {
@@ -343,7 +343,8 @@ h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li >
 			header
 			==== */
 .headPrincipal {
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
 
 /* ====
 			nav-menu
@@ -376,8 +377,6 @@ h1 > span, .nav-menu, .rubriques-articles ul ul, .rubriques-articles > ul > li >
     display: block; }
   .rubriques-articles ul ul {
     display: block; }
-  .nav-menu {
-    display: flex; }
   .headPrincipal {
     display: flex; } }
 
@@ -560,6 +559,9 @@ input[type="email"]:valid {
     flex-wrap: nowrap; } }
 
 /* lier la Google Font : */
+/*=================
+  # STYLES GENERAUX  
+     =================*/
 * {
   box-sizing: border-box; }
 
@@ -623,6 +625,6 @@ P {
 	main : bloc-page
 	==== */
 /* ???  ??? */
-.img-home img, .img-gazza img {
+.img-home, .img-gazza {
   width: 16rem;
   height: 12rem; }

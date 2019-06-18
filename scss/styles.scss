@@ -9,9 +9,6 @@
 @import 'partials/_grid';
 @import 'partials/_positions'; 
 @import 'partials/_header_footer';
-
-
-
 @import 'partials/_catalogue';
 @import 'partials/_detail';
 @import 'partials/_contact';
@@ -20,7 +17,9 @@
 /* lier la Google Font : */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300');
 
-
+/*=================
+  # STYLES GENERAUX  
+     =================*/
 	 *{
 
 		box-sizing: border-box;
@@ -115,8 +114,8 @@
 	
 	.img-home, .img-gazza {
 
-		img{
+		
 		width: 16rem;
 		height: 12rem;
-		}
+		
 	}

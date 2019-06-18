@@ -27,16 +27,17 @@
 
 		.headPrincipal{
 			text-align:center;
+			align-items: center;
 		
 		}
 		/* ====
 			nav-menu
 			==== */
 		
-		.nav-menu{
+		
+		nav .nav-menu{
 			@extend %none;
 		}
-		
 
 
 	/* ====
@@ -81,6 +82,7 @@
 	@extend %none;
 }
 
+
 .big-detail{
 	@extend %none;
 }
@@ -101,13 +103,9 @@
 				display: block;
 			}
 		}
-
-		.nav-menu{
-			display: flex;
-			
-			}
+	
 		.headPrincipal{
-			display:flex;
+			display: flex;
 		}
 			  
 	}

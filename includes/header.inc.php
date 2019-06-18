@@ -41,12 +41,12 @@ $page = $path['filename'];
 
      <!-- GROUPE 2 La nav ou menu du site -- >
 
-        <!-- en vue intermédiaire (tablette) les élémts se positionnent 3 par 3 
+         en vue intermédiaire (tablette) les élémts se positionnent 3 par 3 
         donc container-md-3 -->
 
         <div class="container">
 
-            <nav class=" nav-principal col-lg-3 col-md-3 "> <!--en display none class dis-none EN MOBILE -->
+            <nav class=" nav-principal col-lg-3 col-md-3 "> <!--en display none EN MOBILE -->
 
                 <ul class=" container nav-menu vert">
                     <!-- pour que mon fichier soit appelé je vais faire un ECHO du PATH chemin 
@@ -60,13 +60,12 @@ $page = $path['filename'];
                 </ul> 
 
 
-<!-- <?php
+<!--
+ <?php
 
-
-
-$urlPage = $_SERVER['REQUEST_URI'];
-$path = pathinfo($urlPage);
-$page = $path['filename']; 
+//$urlPage = $_SERVER['REQUEST_URI'];
+//$path = pathinfo($urlPage);
+//$page = $path['filename']; 
  // if( $page == 'catalogue'){
  //    echo "je suis dans la page catalogue " ;
 
@@ -74,9 +73,10 @@ $page = $path['filename'];
  //   echo "je ne suis pas dans la page catalogue " ;
  // }
 
-echo ( $page == 'catalogue') ?  "je suis dans la page catalogue " :  "je ne suis pas dans la page catalogue " ;
+//echo ( $page == 'catalogue') ?  "je suis dans la page catalogue " :  "je ne suis pas dans la page catalogue " ;
 
-?> -->
+?> 
+-->
             </nav>
 
         </div>
