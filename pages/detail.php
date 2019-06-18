@@ -1,9 +1,10 @@
 <?php
         define("PATH", "../");
  ?>
-<!--  définition des CHEMINS  -->
+
 <!DOCTYPE html>
 <html lang="fr">
+    <!--  définition des CHEMINS  -->
 
     <head>
         <!-- je vais faire un INCLUDE des meta et des links -->
@@ -63,7 +64,7 @@
                 <div class="description-detail">
                     <h2>Bombay : </h2>
                     <h3>Chaise De Bar Industrielle en cuir marron</h3>
-                    <p>Le siège en cuir n'est pas complètement fini donnant aux chaises un joli loock vintage! </br>Un design cool que vous pouvez combiner avec, par exemple, une table en bois.</p>
+                    <p>Le siège en cuir n'est pas complètement fini donnant aux chaises un joli loock vintage! <br />Un design cool que vous pouvez combiner avec, par exemple, une table en bois.</p>
                 </div>
 
                 <div class="specifications-detail" >

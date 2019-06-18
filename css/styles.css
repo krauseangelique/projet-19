@@ -632,7 +632,7 @@ body {
   font-size: 1.4rem; }
 
 .bloc-page {
-  max-width: 960px;
+  max-width: 1024px;
   padding-left: 1rem;
   padding-right: 1rem; }
 
@@ -696,7 +696,8 @@ P {
     background-image: url("../img/slide.jpg");
     /* image de décoration */
     background-size: cover;
-    /* pour les images de FOND */ }
+    /* pour les images de FOND */
+    min-height: 10rem; }
   .form {
     text-align: right; }
   .contenu {

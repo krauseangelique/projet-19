@@ -39,7 +39,7 @@ $page = $path['filename'];
         <hr />
 
 
-     <!-- GROUPE 2 La nav ou menu du site -- >
+     <!-- GROUPE 2 La nav ou menu du site 
 
          en vue intermédiaire (tablette) les élémts se positionnent 3 par 3 
         donc container-md-3 -->

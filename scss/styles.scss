@@ -34,7 +34,7 @@
     	font-size: 1.4rem;
 	}
 	.bloc-page{
-		max-width: 960px; // CONTAINER
+		max-width: 1024px; // CONTAINER
 		@extend %center; 
 		padding-left: $space;
 		padding-right: $space;
@@ -134,6 +134,7 @@
 		.img-slide{
 			background-image: url("../img/slide.jpg"); /* image de décoration */
 			background-size: cover; /* pour les images de FOND */
+			min-height: 10rem;
 			
 		}
 		.form{

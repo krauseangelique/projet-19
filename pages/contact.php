@@ -1,10 +1,10 @@
 <?php
         define("PATH", "../");
 ?>
-<!--  définition des CHEMINS  -->
+
 <!DOCTYPE html>
 <html lang="fr">
-
+<!--  définition des CHEMINS  -->
     <head>
         <!-- je vais faire un INCLUDE des meta et des links -->
          <?php   

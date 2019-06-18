@@ -2,9 +2,10 @@
         define("PATH", "../");
         
  ?>
-<!--  définition des CHEMINS  -->
+
 <!DOCTYPE html>
 <html lang="fr">
+    <!--  définition des CHEMINS  -->
 
     <head>
         <!-- je vais faire un INCLUDE des meta et des links -->
@@ -72,7 +73,7 @@
                     <article class="article col-md-5 col-lg-2 ">
                         <figure class="img">
                             <a href="detail.php">
-                               <img src="../img/IMG_7957x z_275x275.jpg" alt="chaise Bombay" /> 
+                               <img src="../img/IMG_7957xz_275x275.jpg" alt="chaise Bombay" /> 
                             </a>
                         </figure> 
                         <h3><a href="detail.php" class="article-titre">Bombay</a></h3>
@@ -155,6 +156,6 @@
             </div>
         </div>
         
-        </div>      
+              
     </body>
 </html>

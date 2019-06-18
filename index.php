@@ -2,10 +2,12 @@
 define("PATH","./");
 
 ?>
-<!-- pour que mes liens soient opérationnels sur CHAQUE page je vais modifier le chemin PATH -->
 
 <!DOCTYPE html>
+
 <html lang="fr">
+    <!-- pour que mes liens soient opérationnels sur CHAQUE page je vais modifier le chemin PATH -->
+
 
      <head>
     <!-- je vais faire un INCLUDE des meta et des links -->
@@ -51,9 +53,24 @@ define("PATH","./");
                 <div class="contenu col-lg-12 col-md-12">
                     
                     <div class="container">
-                        <main  class="content  col-md-9 col-lg-9">
-
-                            <article class="article lg-item-triple md-item-triple">
+                        <main  class="content  col-xs-12 col-md-3 col-lg-3">
+                        <article class="article ">
+                                <figure >
+                                     <h2>
+                                         
+                                        <img  src="img/i-shop-sundays_1.jpg" alt="i shop on first Sundays" />
+                                        <span  class="dis-none" >Ouvert chaque 1er dimanche du mois (12h-18h)</span>
+                                        
+                                    </h2> 
+                                    <ul>
+                                            <li> 3 juin </li>
+                                            <li> 1 juillet </li> 
+                                            <li> 5 août </li> 
+                                            <li> 2 septembre </li>  
+                                        </ul> 
+                                 </figure>
+                            </article>
+                            <article class="article col-xs-12 col-md-9 col-lg-9">
                                 <figure >
                                      <h2>
                                         <span  class="dis-none" >la nouvelle collection gazzda</span>  
